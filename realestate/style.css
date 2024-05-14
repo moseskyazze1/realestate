@@ -42,6 +42,15 @@ h3{
     margin-left: auto;
     margin-right: auto;
 }
+.btn-read-more{
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-size: 12px;
+}
 .flex-c{
     display: flex;
 }
@@ -50,6 +59,21 @@ h3{
     justify-content: space-around;
     height: 10rem;
     align-items: center;
+}
+@media(max-width: 768px){
+    /*mobile presentation*/
+    .bar{
+        flex-direction: column;
+    }
+    .container{
+        width: 95%;
+    }
+    .flex-c{
+        flex-direction: column;
+    }
+    h3{
+        text-align: center;
+    }
 }
 .bt{
     font-weight: bold;
@@ -65,6 +89,11 @@ h3{
     text-align: center;
     height: 30rem;
 }
+header.site-secondary{
+    background-color: black;
+    height: 100px;
+    color: white;
+}
 /*more about us*/
 .more-about-item{
     margin-right: 1rem;
@@ -72,6 +101,13 @@ h3{
 }
 .more-about.item p{
     text-align: justify;
+}
+@media(max-width:768px){
+    .more-about-item img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 /*houses and penthouses*/
 
@@ -81,7 +117,13 @@ h3{
 .houses-item a{
     color: black;
 }
-
+.flex-icon{
+    display: flex;
+}
+.flex-icon p{
+margin-left: 1rem;
+margin-right: 1rem;
+}
 /*contact*/
 .site-contact{
     background-color: rgb(193, 134, 6);
@@ -100,6 +142,7 @@ font-size: 1.6rem;
 margin: 1rem;
 border: 1px ;
 }
+legend{font-size: ;}
 .form-control{
     margin: 1rem;
 }
@@ -112,10 +155,23 @@ border: 1px ;
 .form-control label{
     display: inline-block;
     width: 150px;
+    font-size: 1.4rem;
 }
 /*blog*/
 .site-blog{
     background-color: rgb(red, green, blue);
     color: black;
     height: 20rem;
+}
+/*footers*/
+.footer{
+    margin-top: 5rem;
+    height: 200px;
+    background-color: #dedede;
+}
+.footer-flex{
+    display: flex;
+    justify-content: space-around;
+    height: 150px;
+    align-items: center;
 }
